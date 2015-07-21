@@ -1,6 +1,7 @@
 # vim cheatsheet
 
 ### Cursor movement
+```
 h - move cursor left
 j - move cursor down
 k - move cursor up
@@ -16,8 +17,10 @@ B - jump backwards to the start of a word (words can contain punctuation)
 $ - jump to the end of the line
 G - go to the last line of the document
 5G - go to line 5
+```
 
 ### Insert mode - inserting/appending text
+```
 i - insert before the cursor
 I - insert at the beginning of the line
 a - insert (append) after the cursor
@@ -26,8 +29,10 @@ o - append (open) a new line below the current line
 O - append (open) a new line above the current line
 ea - insert (append) at the end of the word
 Esc - exit insert mode
+```
 
 ### Working with multiple files
+```
 :e filename - edit a file in a new buffer
 :bnext or :bn - go to the next buffer
 :bprev or :bp - go to the previous buffer
@@ -42,8 +47,10 @@ Ctrl + wh - move cursor to the left window (vertical split)
 Ctrl + wl - move cursor to the right window (vertical split)
 Ctrl + wj - move cursor to the window below (horizontal split)
 Ctrl + wk - move cursor to the window above (horizontal split)
+```
 
 ### Editing
+```
 r - replace a single character
 J - join line below to the current one
 cc - change (replace) entire line
@@ -55,8 +62,10 @@ xp - transpose two letters (delete and paste)
 u - undo
 Ctrl + r - redo
 . - repeat last command
+```
 
 ### Marking text (visual mode)
+```
 v - start visual mode, mark lines, then do a command (like y-yank)
 V - start linewise visual mode
 o - move to other end of marked area
@@ -68,15 +77,19 @@ aB - a block with {}
 ib - inner block with ()
 iB - inner block with {}
 Esc - exit visual mode
+```
 
 ### Visual commands
+```
 > - shift text right
 < - shift text left
 y - yank (copy) marked text
 d - delete marked text
 ~ - switch case
+```
 
 ### Tabs
+```
 :tabnew filename or :tabn filename - open a file in a new tab
 Ctrl + wT - move the current split window into its own tab
 gt or :tabnext or :tabn - move to the next tab
@@ -85,8 +98,10 @@ gT or :tabprev or :tabp - move to the previous tab
 :tabmove # - move current tab to the #th position (indexed from 0)
 :tabclose or :tabc - close the current tab and all its windows
 :tabonly or :tabo - close all tabs except for the current one
+```
 
 ### Cut and paste
+```
 yy - yank (copy) a line
 2yy - yank (copy) 2 lines
 yw - yank (copy) word
@@ -99,18 +114,22 @@ dw - delete (cut) word
 D - delete (cut) to the end of the line
 d$ - delete (cut) to the end of the line
 x - delete (cut) character
+```
 
 ### Exiting
+```
 :w - write (save) the file, but don't exit
 :wq or :x or ZZ - write (save) and quit
 :q - quit (fails if there are unsaved changes)
 :q! or ZQ - quit and throw away unsaved changes
-
+```
 
 ### Search and replace
+```
 /pattern - search for pattern
 ?pattern - search backward for pattern
 n - repeat search in same direction
 N - repeat search in opposite direction
 :%s/old/new/g - replace all old with new throughout file
 :%s/old/new/gc - replace all old with new throughout file with confirmations
+```
