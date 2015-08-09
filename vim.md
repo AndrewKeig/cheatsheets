@@ -1,6 +1,21 @@
 # vim cheatsheet
 
+### Vim File explorer
+
+Hold `:`
+
+```
+e . - Open integrated file explorer
+Sex - Split window and open integrated file explorer
+Sex! 	 - Same as :Sex but split window vertically
+browse e - Graphical file explorer
+ls	    - List buffers
+cd .. 	 |Move to parent directory
+args 	 - List files
+```
+
 ### Cursor movement
+
 ```
 h - move cursor left
 j - move cursor down
